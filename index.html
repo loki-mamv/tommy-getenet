@@ -1,0 +1,1740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Getenet | Strength & Nutrition Coach | Buffalo, NY</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tommy Getenet is a certified strength & conditioning trainer and nutrition coach in Buffalo, NY. Helping busy professionals build sustainable fitness habits.">
+    <meta name="keywords" content="personal trainer Buffalo NY, strength conditioning Buffalo, nutrition coach, fitness for busy professionals, Tommy Getenet">
+    <meta name="author" content="Tommy Getenet">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://loki-mamv.github.io/tommy-getenet/">
+    <meta property="og:title" content="Tommy Getenet | Strength & Nutrition Coach">
+    <meta property="og:description" content="Certified trainer helping busy professionals in Buffalo, NY build strength and sustainable nutrition habits.">
+    <meta property="og:image" content="https://loki-mamv.github.io/tommy-getenet/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tommy Getenet | Strength & Nutrition Coach">
+    <meta name="twitter:description" content="Certified trainer helping busy professionals in Buffalo, NY build strength and sustainable nutrition habits.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ========================================
+           CSS RESET & BASE
+           ======================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a2e;
+            background-color: #fafbfc;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        /* ========================================
+           TYPOGRAPHY
+           ======================================== */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-weight: 600;
+            line-height: 1.2;
+            color: #0d1117;
+        }
+        
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+        }
+        
+        p {
+            font-size: 1.125rem;
+            color: #4a5568;
+        }
+        
+        .lead {
+            font-size: 1.25rem;
+            line-height: 1.7;
+        }
+        
+        /* ========================================
+           LAYOUT UTILITIES
+           ======================================== */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .section {
+            padding: 6rem 0;
+        }
+        
+        .section--alt {
+            background: #ffffff;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* ========================================
+           NAVIGATION
+           ======================================== */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(250, 251, 252, 0.92);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+        
+        .nav--scrolled {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+        
+        .nav__inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+        
+        .nav__logo {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #0d1117;
+        }
+        
+        .nav__logo span {
+            color: #2563eb;
+        }
+        
+        .nav__links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav__link {
+            font-size: 0.9375rem;
+            font-weight: 500;
+            color: #4a5568;
+            transition: color 0.2s ease;
+        }
+        
+        .nav__link:hover {
+            color: #2563eb;
+        }
+        
+        .nav__cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1.25rem;
+            background: #2563eb;
+            color: white;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .nav__cta:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        
+        .nav__toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        
+        .nav__toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #1a1a2e;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        /* ========================================
+           HERO SECTION
+           ======================================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 72px;
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 72px;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse 80% 50% at 80% 40%, rgba(37, 99, 235, 0.08), transparent),
+                radial-gradient(ellipse 60% 40% at 60% 60%, rgba(16, 185, 129, 0.06), transparent);
+            pointer-events: none;
+        }
+        
+        .hero__inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero__content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero__badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #ecfdf5;
+            border: 1px solid #a7f3d0;
+            border-radius: 100px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #047857;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero__badge svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .hero__title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero__title span {
+            display: block;
+            background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero__description {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            line-height: 1.8;
+        }
+        
+        .hero__actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .hero__visual {
+            position: relative;
+        }
+        
+        .hero__image-container {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.15),
+                0 0 0 1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero__image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .hero__image-placeholder svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .hero__image-placeholder span {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+        
+        .hero__stats {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .hero__stat {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .hero__stat-value {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2563eb;
+        }
+        
+        .hero__stat-label {
+            font-size: 0.8125rem;
+            color: #64748b;
+        }
+        
+        /* ========================================
+           BUTTONS
+           ======================================== */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        
+        .btn--primary {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+        }
+        
+        .btn--primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+        }
+        
+        .btn--secondary {
+            background: white;
+            color: #1a1a2e;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn--secondary:hover {
+            background: #f8fafc;
+            border-color: #cbd5e1;
+        }
+        
+        .btn--large {
+            padding: 1.125rem 2.5rem;
+            font-size: 1.0625rem;
+        }
+        
+        .btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        /* ========================================
+           ABOUT SECTION
+           ======================================== */
+        .about {
+            background: #ffffff;
+        }
+        
+        .about__inner {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 5rem;
+            align-items: center;
+        }
+        
+        .about__image {
+            position: relative;
+        }
+        
+        .about__image-main {
+            border-radius: 20px;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+        
+        .about__image-accent {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+            border-radius: 16px;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        .about__label {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .about__title {
+            margin-bottom: 1.5rem;
+        }
+        
+        .about__text {
+            margin-bottom: 1rem;
+            color: #64748b;
+        }
+        
+        .about__values {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        .about__value {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        
+        .about__value-icon {
+            width: 24px;
+            height: 24px;
+            color: #10b981;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .about__value-text {
+            font-size: 1rem;
+            color: #334155;
+            font-weight: 500;
+        }
+        
+        /* ========================================
+           SERVICES SECTION
+           ======================================== */
+        .services {
+            background: #f8fafc;
+        }
+        
+        .services__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+        
+        .services__label {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .services__title {
+            margin-bottom: 1rem;
+        }
+        
+        .services__subtitle {
+            color: #64748b;
+            font-size: 1.125rem;
+        }
+        
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            border-color: transparent;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb 0%, #0891b2 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        
+        .service-card__icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card__icon--strength {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            color: #2563eb;
+        }
+        
+        .service-card__icon--nutrition {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+            color: #059669;
+        }
+        
+        .service-card__icon svg {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .service-card__title {
+            margin-bottom: 1rem;
+        }
+        
+        .service-card__description {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .service-card__features {
+            list-style: none;
+        }
+        
+        .service-card__feature {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            color: #475569;
+            font-size: 0.9375rem;
+        }
+        
+        .service-card__feature svg {
+            width: 18px;
+            height: 18px;
+            color: #10b981;
+            flex-shrink: 0;
+        }
+        
+        /* ========================================
+           WHO IT'S FOR SECTION
+           ======================================== */
+        .audience {
+            background: #0f172a;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .audience::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 50% 50% at 20% 20%, rgba(37, 99, 235, 0.15), transparent),
+                radial-gradient(ellipse 40% 40% at 80% 80%, rgba(16, 185, 129, 0.1), transparent);
+            pointer-events: none;
+        }
+        
+        .audience__inner {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .audience__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+        
+        .audience__label {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #60a5fa;
+            margin-bottom: 1rem;
+        }
+        
+        .audience__title {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .audience__subtitle {
+            color: #94a3b8;
+            font-size: 1.125rem;
+        }
+        
+        .audience__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .audience-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .audience-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .audience-card__icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1.5rem;
+            border-radius: 16px;
+            background: rgba(37, 99, 235, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+        
+        .audience-card__title {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+        
+        .audience-card__text {
+            color: #94a3b8;
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+        
+        /* ========================================
+           HOW IT WORKS SECTION
+           ======================================== */
+        .process {
+            background: white;
+        }
+        
+        .process__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+        
+        .process__label {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .process__title {
+            margin-bottom: 1rem;
+        }
+        
+        .process__subtitle {
+            color: #64748b;
+            font-size: 1.125rem;
+        }
+        
+        .process__steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+        
+        .process__steps::before {
+            content: '';
+            position: absolute;
+            top: 48px;
+            left: 20%;
+            right: 20%;
+            height: 2px;
+            background: linear-gradient(90deg, #e2e8f0 0%, #2563eb 50%, #e2e8f0 100%);
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step__number {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+        }
+        
+        .step__title {
+            margin-bottom: 0.75rem;
+        }
+        
+        .step__text {
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1.7;
+            max-width: 280px;
+            margin: 0 auto;
+        }
+        
+        /* ========================================
+           TESTIMONIALS SECTION
+           ======================================== */
+        .testimonials {
+            background: #f8fafc;
+        }
+        
+        .testimonials__header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+        
+        .testimonials__label {
+            display: inline-block;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonials__title {
+            margin-bottom: 1rem;
+        }
+        
+        .testimonials__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .testimonial {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .testimonial__quote {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 32px;
+            height: 32px;
+            color: #e2e8f0;
+        }
+        
+        .testimonial__content {
+            color: #475569;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .testimonial__avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2563eb 0%, #0891b2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .testimonial__info {
+            flex: 1;
+        }
+        
+        .testimonial__name {
+            font-weight: 600;
+            color: #1a1a2e;
+            font-size: 0.9375rem;
+        }
+        
+        .testimonial__role {
+            color: #64748b;
+            font-size: 0.8125rem;
+        }
+        
+        /* ========================================
+           CTA / CONTACT SECTION
+           ======================================== */
+        .cta {
+            background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        
+        .cta__inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .cta__title {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta__subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+        }
+        
+        .cta__contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .cta__phone {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.2s ease;
+        }
+        
+        .cta__phone:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .cta__phone svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .cta__or {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .cta__actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .btn--white {
+            background: white;
+            color: #1e40af;
+        }
+        
+        .btn--white:hover {
+            background: #f8fafc;
+            transform: translateY(-2px);
+        }
+        
+        .btn--outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .btn--outline-white:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        /* ========================================
+           FOOTER
+           ======================================== */
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .footer__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer__brand {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .footer__logo {
+            font-family: 'Source Serif 4', Georgia, serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        
+        .footer__tagline {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+        
+        .footer__links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .footer__link {
+            color: #94a3b8;
+            font-size: 0.875rem;
+            transition: color 0.2s ease;
+        }
+        
+        .footer__link:hover {
+            color: white;
+        }
+        
+        .footer__copyright {
+            color: #64748b;
+            font-size: 0.8125rem;
+        }
+        
+        /* ========================================
+           ANIMATIONS
+           ======================================== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Stagger children */
+        .stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+        .stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+        .stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+        .stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+        
+        /* ========================================
+           RESPONSIVE DESIGN
+           ======================================== */
+        @media (max-width: 1024px) {
+            .hero__inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            
+            .hero__description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .hero__actions {
+                justify-content: center;
+            }
+            
+            .hero__visual {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .hero__stats {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .about__inner {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .about__image {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .services__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .audience__grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            
+            .process__steps {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .process__steps::before {
+                display: none;
+            }
+            
+            .testimonials__grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 4rem 0;
+            }
+            
+            .nav__links {
+                display: none;
+            }
+            
+            .nav__toggle {
+                display: flex;
+            }
+            
+            .nav__cta {
+                display: none;
+            }
+            
+            /* Mobile menu */
+            .nav.nav--open .nav__links {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 1.5rem;
+                border-bottom: 1px solid #e2e8f0;
+                gap: 1rem;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding-top: 100px;
+                padding-bottom: 4rem;
+            }
+            
+            .hero__stats {
+                position: relative;
+                bottom: auto;
+                left: auto;
+                transform: none;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+            
+            .hero__actions {
+                flex-direction: column;
+            }
+            
+            .about__values {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta__phone {
+                font-size: 1.25rem;
+                padding: 0.875rem 1.5rem;
+            }
+            
+            .cta__actions {
+                flex-direction: column;
+            }
+            
+            .footer__inner {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .footer__links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.75rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .btn {
+                padding: 0.875rem 1.5rem;
+                width: 100%;
+            }
+            
+            .hero__stat {
+                padding: 0.75rem 1rem;
+            }
+            
+            .hero__stat-value {
+                font-size: 1.25rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+            
+            .step__number {
+                width: 72px;
+                height: 72px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav__inner">
+                <a href="#" class="nav__logo">Tommy <span>Getenet</span></a>
+                <ul class="nav__links">
+                    <li><a href="#about" class="nav__link">About</a></li>
+                    <li><a href="#services" class="nav__link">Services</a></li>
+                    <li><a href="#process" class="nav__link">How It Works</a></li>
+                    <li><a href="#testimonials" class="nav__link">Results</a></li>
+                </ul>
+                <a href="tel:716-545-6193" class="nav__cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Let's Talk
+                </a>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <div class="hero__badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        Certified Personal Trainer & Nutrition Coach
+                    </div>
+                    <h1 class="hero__title">
+                        Get Stronger.<br>
+                        <span>Feel Better.</span>
+                    </h1>
+                    <p class="hero__description">
+                        Real training for real people with real schedules. I help busy professionals in Buffalo build sustainable strength and nutrition habits — no fads, no fluff, just results.
+                    </p>
+                    <div class="hero__actions">
+                        <a href="tel:716-545-6193" class="btn btn--primary btn--large">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            Call 716-545-6193
+                        </a>
+                        <a href="#services" class="btn btn--secondary btn--large">
+                            See How I Can Help
+                        </a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__image-container">
+                        <div class="hero__image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6.5 6.5h11M4 12h4m8 0h4M6.5 17.5h11"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                            <span>Tommy Getenet</span>
+                        </div>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <div class="hero__stat-value">100+</div>
+                            <div class="hero__stat-label">Clients Helped</div>
+                        </div>
+                        <div class="hero__stat">
+                            <div class="hero__stat-value">Buffalo</div>
+                            <div class="hero__stat-label">NY Area</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__image animate-on-scroll">
+                    <div class="about__image-main">
+                        <span>Tommy Training</span>
+                    </div>
+                    <div class="about__image-accent"></div>
+                </div>
+                <div class="about__content">
+                    <span class="about__label animate-on-scroll">About Tommy</span>
+                    <h2 class="about__title animate-on-scroll">
+                        Fitness should fit your life — not the other way around.
+                    </h2>
+                    <p class="about__text animate-on-scroll">
+                        I get it. You've got a demanding job, a family, and about a hundred things competing for your time. The last thing you need is a cookie-cutter workout plan that assumes you have two hours a day to spend at the gym.
+                    </p>
+                    <p class="about__text animate-on-scroll">
+                        As a certified personal trainer and nutrition coach, I specialize in helping busy professionals find realistic ways to get stronger, eat better, and feel more confident — without turning their entire life upside down.
+                    </p>
+                    <p class="about__text animate-on-scroll">
+                        No extreme diets. No six-day-a-week gym commitments. Just smart, efficient training and practical nutrition strategies that work with your schedule, not against it.
+                    </p>
+                    <div class="about__values stagger-children">
+                        <div class="about__value animate-on-scroll">
+                            <svg class="about__value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span class="about__value-text">Certified Personal Trainer</span>
+                        </div>
+                        <div class="about__value animate-on-scroll">
+                            <svg class="about__value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span class="about__value-text">Nutrition Certified</span>
+                        </div>
+                        <div class="about__value animate-on-scroll">
+                            <svg class="about__value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span class="about__value-text">Results-Focused Approach</span>
+                        </div>
+                        <div class="about__value animate-on-scroll">
+                            <svg class="about__value-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <span class="about__value-text">Buffalo, NY Based</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="services__header">
+                <span class="services__label animate-on-scroll">Services</span>
+                <h2 class="services__title animate-on-scroll">Two pillars. One goal.</h2>
+                <p class="services__subtitle animate-on-scroll">
+                    Strength training and nutrition work best together. I offer both — separately or combined — to help you reach your goals faster.
+                </p>
+            </div>
+            <div class="services__grid stagger-children">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon service-card__icon--strength">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6.5 6.5h11M4 12h4m8 0h4M6.5 17.5h11"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Strength & Conditioning</h3>
+                    <p class="service-card__description">
+                        Build functional strength that carries over into real life. Whether you want to feel stronger carrying groceries, keep up with your kids, or just move without pain — I'll create a program that fits your schedule and goals.
+                    </p>
+                    <ul class="service-card__features">
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Personalized programming for your schedule
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Form coaching to prevent injury
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Progressive overload for real results
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            In-person or remote options
+                        </li>
+                    </ul>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-card__icon service-card__icon--nutrition">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card__title">Nutrition Coaching</h3>
+                    <p class="service-card__description">
+                        Forget restrictive diets that make you miserable. I'll help you build eating habits that fuel your goals, fit your lifestyle, and still let you enjoy food. Sustainable changes beat quick fixes every time.
+                    </p>
+                    <ul class="service-card__features">
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            No-BS nutrition guidance
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Strategies for eating on the go
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Habit building over calorie counting
+                        </li>
+                        <li class="service-card__feature">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Ongoing accountability & check-ins
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For Section -->
+    <section class="audience section" id="audience">
+        <div class="container">
+            <div class="audience__inner">
+                <div class="audience__header">
+                    <span class="audience__label animate-on-scroll">Who I Work With</span>
+                    <h2 class="audience__title animate-on-scroll">Built for busy people</h2>
+                    <p class="audience__subtitle animate-on-scroll">
+                        You don't need to be an athlete or gym rat. You just need to be ready to prioritize your health — even with a packed schedule.
+                    </p>
+                </div>
+                <div class="audience__grid stagger-children">
+                    <div class="audience-card animate-on-scroll">
+                        <div class="audience-card__icon">💼</div>
+                        <h4 class="audience-card__title">Working Professionals</h4>
+                        <p class="audience-card__text">
+                            Long hours, meetings, and deadlines. I design programs that work around your work — not the other way around.
+                        </p>
+                    </div>
+                    <div class="audience-card animate-on-scroll">
+                        <div class="audience-card__icon">👨‍👩‍👧</div>
+                        <h4 class="audience-card__title">Busy Parents</h4>
+                        <p class="audience-card__text">
+                            Between kids, activities, and life chaos, you need efficient workouts that deliver. I get it — and I can help.
+                        </p>
+                    </div>
+                    <div class="audience-card animate-on-scroll">
+                        <div class="audience-card__icon">🔄</div>
+                        <h4 class="audience-card__title">Getting Back Into It</h4>
+                        <p class="audience-card__text">
+                            Been a while since you exercised? No judgment here. We'll start where you are and build from there.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process section" id="process">
+        <div class="container">
+            <div class="process__header">
+                <span class="process__label animate-on-scroll">How It Works</span>
+                <h2 class="process__title animate-on-scroll">Simple. No hassle.</h2>
+                <p class="process__subtitle animate-on-scroll">
+                    Getting started doesn't have to be complicated. Here's how we'll work together.
+                </p>
+            </div>
+            <div class="process__steps stagger-children">
+                <div class="step animate-on-scroll">
+                    <div class="step__number">1</div>
+                    <h3 class="step__title">Free Consultation</h3>
+                    <p class="step__text">
+                        We'll talk about your goals, schedule, and what's worked (or hasn't) in the past. No pressure, no sales pitch — just an honest conversation.
+                    </p>
+                </div>
+                <div class="step animate-on-scroll">
+                    <div class="step__number">2</div>
+                    <h3 class="step__title">Custom Plan</h3>
+                    <p class="step__text">
+                        Based on our chat, I'll create a training and/or nutrition plan built specifically for you — your goals, your schedule, your life.
+                    </p>
+                </div>
+                <div class="step animate-on-scroll">
+                    <div class="step__number">3</div>
+                    <h3 class="step__title">Execute & Adapt</h3>
+                    <p class="step__text">
+                        We'll work the plan together, track progress, and adjust as needed. Life changes — your program should too.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="testimonials__header">
+                <span class="testimonials__label animate-on-scroll">Results</span>
+                <h2 class="testimonials__title animate-on-scroll">Real people. Real results.</h2>
+            </div>
+            <div class="testimonials__grid stagger-children">
+                <div class="testimonial animate-on-scroll">
+                    <svg class="testimonial__quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="testimonial__content">
+                        "Tommy doesn't just tell you what to do — he actually explains why. For the first time, I understand how to train and eat in a way that makes sense for my life."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">MK</div>
+                        <div class="testimonial__info">
+                            <div class="testimonial__name">Mike K.</div>
+                            <div class="testimonial__role">Finance Professional</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial animate-on-scroll">
+                    <svg class="testimonial__quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="testimonial__content">
+                        "As a mom of two with a full-time job, I thought getting fit was impossible. Tommy showed me how to make it work in 30-minute sessions. Down 15 lbs and feeling stronger than ever."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">SR</div>
+                        <div class="testimonial__info">
+                            <div class="testimonial__name">Sarah R.</div>
+                            <div class="testimonial__role">Working Mom</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial animate-on-scroll">
+                    <svg class="testimonial__quote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="testimonial__content">
+                        "No gimmicks, no supplements, no BS. Just solid training advice and nutrition that actually fits my lifestyle. Exactly what I needed."
+                    </p>
+                    <div class="testimonial__author">
+                        <div class="testimonial__avatar">JT</div>
+                        <div class="testimonial__info">
+                            <div class="testimonial__name">James T.</div>
+                            <div class="testimonial__role">Small Business Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section" id="contact">
+        <div class="container">
+            <div class="cta__inner">
+                <h2 class="cta__title animate-on-scroll">Ready to feel better?</h2>
+                <p class="cta__subtitle animate-on-scroll">
+                    Let's have a conversation about your goals. No commitment, no pressure — just a real talk about what you want to achieve and how I can help.
+                </p>
+                <div class="cta__contact">
+                    <a href="tel:716-545-6193" class="cta__phone animate-on-scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        716-545-6193
+                    </a>
+                    <span class="cta__or animate-on-scroll">Call or text anytime</span>
+                    <div class="cta__actions animate-on-scroll">
+                        <a href="tel:716-545-6193" class="btn btn--white btn--large">
+                            Schedule Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo">Tommy Getenet</div>
+                    <div class="footer__tagline">Strength & Nutrition Coach • Buffalo, NY</div>
+                </div>
+                <div class="footer__links">
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#services" class="footer__link">Services</a>
+                    <a href="#process" class="footer__link">How It Works</a>
+                    <a href="tel:716-545-6193" class="footer__link">Contact</a>
+                </div>
+                <div class="footer__copyright">
+                    © 2024 Tommy Getenet. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========================================
+        // NAVIGATION SCROLL EFFECT
+        // ========================================
+        const nav = document.getElementById('nav');
+        const navToggle = document.getElementById('navToggle');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('nav--scrolled');
+            } else {
+                nav.classList.remove('nav--scrolled');
+            }
+        });
+        
+        // Mobile menu toggle
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav--open');
+        });
+        
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav--open');
+            });
+        });
+        
+        // ========================================
+        // SCROLL ANIMATIONS
+        // ========================================
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // ========================================
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ========================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = nav.offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========================================
+        // PRELOAD ANIMATION - Show content after page load
+        // ========================================
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
